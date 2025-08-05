@@ -1,4 +1,51 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  background-color: blanchedalmond;
+  max-width: 300px;
+  padding: 20px;
+}
+aside input {
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.contact-section {
+  margin: 50px;
+}
+img {
+  width: 30px;
+  height: 30px;
+}
+.Contact-List {
+  list-style: none;
+}
+li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contact-select {
+  background-color: rgb(204, 204, 204);
+}
+.timestampred::before {
+  content: "• ";
+  color: red;
+}
+.timestampgreen::before {
+  content: "• ";
+  color: green;
+}
+.timestampgreen,
+.timestampred {
+  color: gray;
+  font-size: 12px;
 }
