@@ -10,7 +10,7 @@ body {
 aside {
   display: flex;
   flex-direction: column;
-  border: 1px solid gray;
+  border: 1px solid #ddd;
   max-width: 250px;
   padding: 20px;
   height: 100vh;
@@ -23,6 +23,7 @@ aside input {
   padding: 8px;
   border-radius: 10px;
   margin-bottom: 10px;
+  border: 1px solid #ddd;
 }
 img {
   width: 30px;
@@ -61,7 +62,7 @@ li {
   margin-top: 12px;
 }
 .header {
-  border-bottom: solid 1px gray;
+  border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   gap: 5px;
@@ -92,6 +93,8 @@ button {
   background-color: rgb(247, 249, 250);
   display: flex;
   flex-direction: column;
+  border: 1px solid #ddd;
+  padding: 10px;
 }
 .messages-sent {
   background-color: rgb(228, 242, 247);
@@ -130,4 +133,17 @@ button {
 .timestamp-message-recived {
   color: gray;
   font-size: 12px;
+}
+.chat-footer {
+  width: 100%;
+  padding: 10px;
+}
+.input-place input[type="text"] {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+}
+.button-footer {
+  margin: 5px;
 }
