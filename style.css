@@ -6,6 +6,7 @@
 }
 body {
   display: flex;
+  height: 100vh;
 }
 aside {
   display: flex;
@@ -77,6 +78,7 @@ button {
   font-size: 15px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .chat {
   display: flex;
@@ -95,6 +97,7 @@ button {
   flex-direction: column;
   border: 1px solid #ddd;
   padding: 10px;
+  flex-grow: 1;
 }
 .messages-sent {
   background-color: rgb(228, 242, 247);
@@ -134,6 +137,9 @@ button {
   color: gray;
   font-size: 12px;
 }
+li {
+  cursor: pointer;
+}
 .chat-footer {
   width: 100%;
   padding: 10px;
@@ -146,4 +152,12 @@ button {
 }
 .button-footer {
   margin: 5px;
+}
+@media (max-width: 480px) {
+  .contact-section {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
 }
